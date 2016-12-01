@@ -9,8 +9,8 @@ class BinTreeNode(object):
 
 
 def tree_insert( tree, item):
-    if tree==None:				    ##if the tree is empty
-        tree=BinTreeNode(item)                      ## adds the first value to the root node
+    if tree==None:				##if the tree is empty
+        tree=BinTreeNode(item)                  ## adds the first value to the root node
     elif(item < tree.value):
         if(tree.left==None):
             tree.left=BinTreeNode(item)         ## a node is added with the item if the left side of the tree not empty
@@ -41,12 +41,13 @@ def in_order(tree):
             stack.append(currentNode.value)
             currentNode = currentNode.left
 
-        elif currentNode.right != None:
-            stack.append(currentNode.value)
+        print( currentNode.value )
+
+        if currentNode.right != None:
+            print(stack[-1])
             stack.pop()
             currentNode = currentNode.right
 
-        print( currentNode.value )
 
         ##if currentNode.right != None:
         ##    stack.pop()
