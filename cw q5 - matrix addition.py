@@ -13,7 +13,7 @@ def addM(matrix1, matrix2):
     # indicates empty spaces to new array, equal to size length of one of given matrices
         
     for i in range(len(matrix1)):
-        if len(matrix1) != len(matrix2) or len(matrix1[i]) != len(matrix2[i]):
+        if len(matrix1) != len(matrix2) or len(matrix1[i]) != len(matrix2[i]): # checks if given matrices are of the same size length for addition to take place
             return None
         else:
             for j in range(len(matrix1[i])):

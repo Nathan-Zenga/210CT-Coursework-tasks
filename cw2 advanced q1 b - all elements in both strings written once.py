@@ -1,8 +1,7 @@
 string1 = ['p', 'w', 'q', 'r', 'w', 'a', 'y', 'g', 'z', 'v']
 string2 = ['e', 'w', 'u', 't', 'x', 'o', 'u', 'a', 'p', 'a']
-global s3
-int count2=0
-s3=string1+string2
+
+s3 = string1 + string2
 
 
 print(s3)
@@ -10,7 +9,7 @@ print(s3)
 def unionString(s1, s2):
     count = 0
     for x in range(len(s3)):
-        for y in range(2,len(s3)-1):
+        for y in range(len(s3)):
             if s3[x] == s3[y]:
                 count = 1
                 

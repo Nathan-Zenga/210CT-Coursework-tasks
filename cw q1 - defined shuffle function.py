@@ -6,7 +6,7 @@ def shuff(L):
     '''Randomises order of elements in the taken array'''
     for i in range(len(L)):
         iRandom = randint(0,len(L)-1) # random index in the array
-        temp = L[i]
+        temp = L[i]         # swapping takes place
         L[i] = L[iRandom]
         L[iRandom] = temp
     return L

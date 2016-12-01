@@ -9,7 +9,7 @@ def trailingZero(t):
         else:
             return n * fact(n-1)
     count = 0
-    factAns = str(fact(t))[::-1] # reversed order of (string) integer value
+    factAns = str(fact(t))[::-1] # factorial number, converted to string and sequentially reversed
     for i in range(len(factAns)): # counts 0s: stops if no more at trailing end
         if factAns[i] != "0":
             break
