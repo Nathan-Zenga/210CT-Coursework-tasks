@@ -36,16 +36,20 @@ def in_order(tree):
     stack = []
 
     while currentNode:
-        print( currentNode.value )
         
         if currentNode.left != None:
             stack.append(currentNode.value)
-
             currentNode = currentNode.left
+
         elif currentNode.right != None:
             stack.append(currentNode.value)
-        if currentNode.right != None:
             stack.pop()
+            currentNode = currentNode.right
+
+        print( currentNode.value )
+
+        ##if currentNode.right != None:
+        ##    stack.pop()
             
         if stack == []:
             print("break")
