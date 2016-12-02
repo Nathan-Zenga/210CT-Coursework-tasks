@@ -1,3 +1,15 @@
+class VERTEX
+
+    def __init__(self):
+        self.label = 0
+        self.edges = []
+
+    def 
+
+example = new VERTEX
+example.label = 24
+example.edges.append(3)
+
 #    A  B  C  D  E
 A = [0, 0, 1, 0, 1]
 B = [0, 1, 0, 1, 1]
